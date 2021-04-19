@@ -25,6 +25,7 @@ Node* root = 0; // корень дерева
 int parseTreeR(Node*& r, char*& s) // парсит дерево из скобочной последовательности; возвращает кол-во узлов в поддереве
 {
     int n = 0; // здесь накапливаем узлы поддерева
+    int m;
 
     if (isdigit(*s))
     {
@@ -82,8 +83,6 @@ int main()
     {
         showTree();
     }
-    else
-        printf("Bad tree\n\n");
 
     return 0;
 }
